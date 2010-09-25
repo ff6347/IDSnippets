@@ -1,5 +1,6 @@
 // written by fabiantheblind for indesign cs4
 // how to include a quote script into the alert
+// quotes taken from http://www.homersimpsonquotes.com/
 function hjsQuote(num){
 quote = new Array();
 quote[0] = "Oh, so they have internet on computers now!";
