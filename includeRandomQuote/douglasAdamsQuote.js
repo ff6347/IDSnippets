@@ -1,7 +1,7 @@
-// quotes taken from…
+// quotes taken from http://www.goodreads.com/author/show/4.Douglas_Adams
 function daQuote(){
 quote = new Array();
-quote [0] = "Most leading theologians claim that this argument is a load of dingo's kidneys, but that didn't stop Oolon Colluphid making a small fortune when he used it as the central theme of his bestselling book Well That About Wraps It Up For God.\"
+quote [0] = "Most leading theologians claim that this argument is a load of dingo's kidneys, but that didn't stop Oolon Colluphid making a small fortune when he used it as the central theme of his bestselling book Well That About Wraps It Up For God.\"";
 quote [1] = "\"I love deadlines. I like the whooshing sound they make as they fly by.\"";
 quote [2] = "\"I may not have gone where I intended to go, but I think I have ended up where I needed to be.\"";
 quote [3] = "\"In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.\"";
