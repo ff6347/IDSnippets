@@ -1,0 +1,1 @@
+app.selection[0].lines.lastItem().appliedCharacterStyle = app.activeDocument.characterStyles.item("color");

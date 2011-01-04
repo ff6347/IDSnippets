@@ -1,0 +1,1 @@
+﻿app.activeDocument.stories[0].changecase(ChangecaseMode.titlecase);if (app.selection[0].parentStory.constructor.name != "Story"){exit();}myArray = app.selection[0].parentStory.contents.split("\r");myArray.sort();myString = myArray.join("\r");app.selection[0].parentStory.contents = myString;
