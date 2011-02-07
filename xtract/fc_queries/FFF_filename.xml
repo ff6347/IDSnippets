@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Query>
+<Header>
+<Version major="5" minor="1">
+</Version>
+<Application value="Adobe InDesign">
+</Application>
+<QueryType value="Grep" qid="1">
+</QueryType>
+</Header>
+<Description>
+<FindExpression value="\((.*?)\)">
+</FindExpression>
+<ReplaceExpression value="">
+</ReplaceExpression>
+<FindChangeOptions>
+<IncludeLockedLayers value="0">
+</IncludeLockedLayers>
+<IncludeLockedStories value="0">
+</IncludeLockedStories>
+<IncludeMasterPages value="0">
+</IncludeMasterPages>
+<IncludeHiddenLayers value="0">
+</IncludeHiddenLayers>
+<IncludeFootnotes value="0">
+</IncludeFootnotes>
+<KanaSensitive value="1">
+</KanaSensitive>
+<WidthSensitive value="1">
+</WidthSensitive>
+</FindChangeOptions>
+<FindFormatSettings>
+</FindFormatSettings>
+<ReplaceFormatSettings>
+<TextAttribute type="changecondmode" value="0">
+</TextAttribute>
+</ReplaceFormatSettings>
+</Description>
+</Query>

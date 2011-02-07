@@ -1,0 +1,25 @@
+taken from: http://help.adobe.com/en_US/InDesign/6.0/WSB4D7E9CD-F741-40a0-A72A-1DB0E6089630a.html
+To load a query that was given to you so that it appears in the Query list, copy the query file to the appropriate location:
+
+Mac OS
+    Users\[username]\Library\Preferences\Adobe InDesign\[Version]\[Language]\Find-Change Queries\[query type]
+
+Windows XP
+    Documents and Settings\[username]\Application Data\Adobe\InDesign\[Version]\[Language]\Find-Change Queries\[query type]
+
+Windows Vista
+    Users\[username]\AppData\Roaming\Adobe\InDesign\[Version]\[Language]\Find-Change Queries\[query type]
+
+
+German:
+
+taken from: http://help.adobe.com/de_DE/InDesign/6.0/WSB4D7E9CD-F741-40a0-A72A-1DB0E6089630a.html
+
+Mac OS
+    Benutzer\[Benutzername]\Library\Preferences\Adobe InDesign\[Version][Sprache]\Find-Change Queries\[Abfrageart]
+
+Windows XP
+    Dokumente und Einstellungen\[Benutzername]\Anwendungsdaten\AdobeInDesign\[Version][Sprache]\Find-Change Queries\[Abfrageart]
+
+Windows Vista
+    Benutzer\[Benutzername]\AppData\Roaming\AdobeInDesign\[Version][Sprache]\Find-Change Queries\[Abfrageart]
