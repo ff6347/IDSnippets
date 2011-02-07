@@ -55,7 +55,7 @@ function placefile(doc,allImages){
 		var ip = result[k].insertionPoints[0];
 		var pp = ip.parentTextFrames[0].parent;
 		
-		var target = doc.pages.item(pp.name).rectangles.add()//pp.textFrames.add();//
+		var target = doc.pages.item(pp.name).rectangles.add();
 		fnText =fnText.replace(/\(/g,"");
 		fnText =fnText.replace(/\)/g,"");
 		target.label = fnText;
