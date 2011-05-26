@@ -55,7 +55,7 @@ function placefile(doc,allImages){
 		var ip = result[k].insertionPoints[0];
 		var pp = ip.parentTextFrames[0].parent;
 		
-		var target = doc.pages.item(pp.name).rectangles.add();
+		var target = pp.rectangles.add();
 		fnText =fnText.replace(/\(/g,"");
 		fnText =fnText.replace(/\)/g,"");
 		target.label = fnText;
@@ -88,7 +88,7 @@ for (var k = result.length-1; k >= 0; k--){
 	var fnText = result[k].contents;
 	var ip = result[k].insertionPoints[0];
 	var pp = ip.parentTextFrames[0].parent;
-	var target = doc.pages.item(pp.name).textFrames.add();
+	var target = pp.textFrames.add()//pp.textFrames.add();//
 	target.label = "img subtext fr";
 	target.geometricBounds = [0,0,100,100];
 	target.contents = fnText;
