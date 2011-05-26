@@ -88,7 +88,7 @@ for (var k = result.length-1; k >= 0; k--){
 	var fnText = result[k].contents;
 	var ip = result[k].insertionPoints[0];
 	var pp = ip.parentTextFrames[0].parent;
-	var target = doc.pages.item(pp.name).textFrames.add()//pp.textFrames.add();//
+	var target = doc.pages.item(pp.name).textFrames.add();
 	target.label = "img subtext fr";
 	target.geometricBounds = [0,0,100,100];
 	target.contents = fnText;
