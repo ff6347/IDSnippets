@@ -1,36 +1,1 @@
-main();
-function main(){
-
-
-createParStyles(app.documents.add());
-
-};
-
-
-function createParStyles (theDoc) {
-
-	var parStyles = {
-  		"styles":[ 
-      			{"name":"h1" ,"appliedFont":app.fonts.item(0)/* bold */ ,  "pointSize":23},
-      			{"name":"h2" , "pointSize":17},
-      			{"name":"h3" , "pointSize":16},
-      			{"name":"h4" , "pointSize":15},
-      			{"name":"h5" , "pointSize":15},
-      			{"name":"h6" , "pointSize":15},
-      			{"name":"body" ,"appliedFont":app.fonts.item(0) , "pointSize":13,"alignToBaseline":true},
-      			{"name":"ul"   , "pointSize":13, "basedOn":theDoc.paragraphStyles.item("body")},
-      			{"name":"ol"   ,"pointSize":13, "basedOn":theDoc.paragraphStyles.item("body")},
-      			{"name":"blockquote" ,"pointSize":12 ,"leftIndent":5}
-      		],
-     };
-
-
-
-	for(var i in parStyles.styles){
-	try{
-		theDoc.paragraphStyles.add(parStyles.styles[i]);
-		}catch(e){
-		alert(e + "\n" + i);
-		};
-	};
-};
+﻿main();function main(){createParStyles(app.documents.add());}function createParStyles (theDoc) {    var dparcoll = theDoc.paragraphStyles;  var parStyles = {      "styles":[            {"name":"body" ,"appliedFont":app.fonts.item(0) , "pointSize":13,"alignToBaseline":true},            {"name":"h1" ,"appliedFont":app.fonts.item(0)/* bold */ , "pointSize":23,"basedOn":dparcoll.item("body")},            {"name":"h2" , "pointSize":17, "basedOn":dparcoll.item("h1")},            {"name":"h3" , "pointSize":16, "basedOn":dparcoll.item("h1")},            {"name":"h4" , "pointSize":15, "basedOn":dparcoll.item("h1")},            {"name":"h5" , "pointSize":15, "basedOn":dparcoll.item("h1")},            {"name":"h6" , "pointSize":15, "basedOn":dparcoll.item("h1")},            {"name":"ul"   , "pointSize":13, "basedOn":dparcoll.item("body")},            {"name":"ol"   ,"pointSize":13, "basedOn":dparcoll.item("body")},            {"name":"blockquote" ,"pointSize":12 ,"leftIndent":5,"basedOn": dparcoll.item("body")}          ]     };var charStyles = {  "styles":[          {"name":"bold"},          {"name":"em"},          {"name":"link","underline":true}  ]};  for(var i =0; i < parStyles.styles.length;i++){  try{    theDoc.paragraphStyles.add(parStyles.styles[i]);    }catch(e){    alert(e + "\n" + i);    }  }  for(var j =0; j < charStyles.styles.length;j++){  try{    theDoc.characterStyles.add(charStyles.styles[j]);    }catch(e){    alert(e + "\n" + j);    }  }}
